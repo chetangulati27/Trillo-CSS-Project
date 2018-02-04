@@ -1,0 +1,54 @@
+.container {
+    max-width: 120rem;
+    // align in center of body
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow: var(--shadow-dark);
+    min-height: 50rem;
+}
+
+.header {
+
+    // font size for header
+    font-size: 1.4rem;
+
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: 1px solid var(--color-grey-light-3);
+
+    // arrang header
+    display: flex;
+    // align along main axis
+    justify-content: space-between;
+    // for y axis
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+
+    // dont grow
+    flex-grow: 0;
+    // dont shrink
+    flex-shrink: 0;
+    // width
+    flex-basis: 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+
+    // occupy remaining place
+    flex-grow: 1;
+
+
+    //height temp
+    height: 80rem;
+}
