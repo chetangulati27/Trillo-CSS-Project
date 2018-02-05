@@ -1,6 +1,5 @@
 .container {
-    max-width: 120rem;
-    // align in center of body
+    max-width: 120rem; // align in center of body
     margin: 8rem auto;
     background-color: var(--color-grey-light-2);
     box-shadow: var(--shadow-dark);
@@ -8,19 +7,13 @@
 }
 
 .header {
-
     // font size for header
     font-size: 1.4rem;
-
     height: 7rem;
     background-color: #fff;
-    border-bottom: 1px solid var(--color-grey-light-3);
-
-    // arrang header
-    display: flex;
-    // align along main axis
-    justify-content: space-between;
-    // for y axis
+    border-bottom: var(--line); // arrang header
+    display: flex; // align along main axis
+    justify-content: space-between; // for y axis
     align-items: center;
 }
 
@@ -29,26 +22,45 @@
 }
 
 .sidebar {
-    background-color: var(--color-grey-dark-1);
-
-    // dont grow
-    flex-grow: 0;
-    // dont shrink
-    flex-shrink: 0;
-    // width
+    background-color: var(--color-grey-dark-1); // dont grow
+    flex-grow: 0; // dont shrink
+    flex-shrink: 0; // width
     flex-basis: 18%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .hotel-view {
-
     // occupy remaining place
     flex-grow: 1;
+}
 
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+}
 
-    //height temp
-    height: 80rem;
+.description {
+    background-color:#fff;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 60%;
+    margin-right: 4.5rem;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+
+    font-size: 1.4rem;
+}
+
+.user-reviews {
+    flex-grow: 1;
+    font-size: 1.4rem;
+
+    // added to center the button
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
